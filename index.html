@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+
+    .text-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; /* Change from 'row' to 'column' */
+        justify-content: center;
+        align-items: center; /* Add this line */
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+        padding: 20px;
+    }
+
+    .text-overlay h3, .text-overlay p {
+        color: white;
+        text-align: center;
+    }
+
+    .service-thumb img {
+        max-width: 100%; /* Ensure image does not exceed container width */
+    }
+    .image-container {
+    background-image: url('/images/instagram.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.image1-container {
+    background-image: url('/images/project1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image1-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.39); /* 50% gray with 50% opacity */
+}
+.image2-container {
+    background-image: url('/images/project2.png');
+    background-size: cover;
+    background-position: center;
+}
+.image2-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.39); /* 50% gray with 50% opacity */
+}
+.image-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.39); /* 50% gray with 50% opacity */
+}
+
+
+
+
+</style>
+
+    
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="templatemo">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Shivani Mishra Portfolio </title>
+<!--
+Stimulus Template
+http://www.templatemo.com/tm-498-stimulus
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
+
+
+<!-- Navigation Section -->
+
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+     <div class="container">
+
+          <!-- navbar header -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="#" class="navbar-brand">Shivani Mishra</a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About Me</a></li>
+                    <li><a href="#experience" class="smoothScroll">Technologies and Projects</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- Home Section -->
+
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-thumb">
+                         <div class="section-title">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to my Portfolio website</h4>
+                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Shivani Mishra</strong> currently based in Lucknow, Uttar Pradesh, India.</h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s">A passionate developer with expertise in Full Stack Development and Software Development. From crafting elegant code to building innovative projects, I thrive on turning ideas into reality..</p>
+                              
+                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
+                              
+                         </div>
+                    </div>
+               </div>
+
+
+          </div>
+     </div>
+</section>
+
+
+<!-- About Section -->
+
+
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                            
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+<p> I'm a skilled web developer proficient in Java, HTML, CSS, and JavaScript. With expertise in React.js, Spring Boot, and database management (MySQL, MongoDB), I specialize in crafting dynamic and user-friendly web applications. Passionate about innovation and problem-solving, 
+     I thrive in collaborative environments and continuously strive for excellence in my work</p>                         </div>
+                    </div>
+               </div>
+
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="skill-thumb">
+                         <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
+                              <h1>My Skills</h1>
+                              <p class="color-white">JAVA . HTML CSS JS . React.js . MySQL . MongoDB . SpringBoot . Web Design</p>
+                         </div>
+
+                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+                         <strong>Frontend Design</strong>
+                              <span class="color-white pull-right">90%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                   </div>
+
+                         <strong>Backend processing</strong>
+                              <span class="color-white pull-right">70%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                   </div>
+
+                         <strong>HTML5 & CSS3</strong>
+                              <span class="color-white pull-right">80%</span>
+                                   <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                   </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Service Section -->
+
+<section id="service" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                         <i class="fa fa-paper-plane"></i>
+                              <h3>Software Developement</h3>
+                              <p class="color-white">I leverage my expertise in coding and problem-solving to create robust software that meets the unique requirements of clients and users alike.</p>
+                    </div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
+                         <i class="fa fa-table"></i>
+                              <h3>Websites</h3>
+                              <p class="color-white">From front-end design to back-end functionality, I create responsive and feature-rich solutions tailored to meet diverse client needs.</p>
+                    </div>
+               </div>
+
+               <div class="bg-white col-md-3 col-sm-6">
+                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+                         <i class="fa fa-html5"></i>
+                              <h3>Coding</h3>
+                              <p>I excel in Java development, specializing in robust data structures and algorithms. My code is crafted to optimize performance and scalability, ensuring efficient solutions to complex problems.</p>
+                    </div>
+               </div>
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                         <i class="fa fa-desktop"></i>
+                              <h3>UI Design</h3>
+                              <p class="color-white">With a focus on user experience, I strive to create designs that not only captivate but also engage and delight users across various platforms</p>
+                    </div>
+               </div>
+
+               
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Experience Section -->
+
+<section id="experience" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image experience-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white experience-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Projects</h1>
+                              <p class="color-white">I've honed my skills in full-stack development, seamlessly blending front-end design with back-end functionality. With expertise in Java and strong data structures and algorithms, I'm well-equipped to tackle diverse challenges in software development</p>
+                         </div>
+
+                         
+
+                         
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+
+<section id="service" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <!-- <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                         <i class="fa fa-paper-plane"></i>
+                              <h3>Hotel Booking App </h3>
+                              <p class="color-white">With Spring Boot, Spring Security & Reactjs.<br>
+                                   Created a simple hotel booking app using Java, Spring Boot, and  ReactJS for the frontend, and used JWT Authentication with Spring Security.</p>
+                    </div>
+               </div> -->
+               <!-- <div class="col-md-3 col-sm-6">
+                    <a href=" https://shivanimishra370.github.io/ShopMe/">
+                        <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                            <img src="images/Screenshot 2024-03-26 114353.png">
+                            <div class="text-overlay">
+                              <h4>Project</h4>
+                                <h3>ShopMe</h3>
+                                <p class="color-white">With Spring Boot, MySQL and Reactjs.<br>
+                                  Created an Ecommerce Website ShopMe.
+                                  <br> Click to Navigate</p>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+                <!-- <div class="image1-container col-md-3 col-sm-6">
+                    <a href="https://shivanimishra370.github.io/ShopMe/">
+                         <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                        <h4 class="color-white">Project 1</h4>
+                        <h3>ShopMe</h3>
+                        <p class="color-white">Introducing ShopMe, an innovative e-commerce platform 
+                         where convenience meets functionality. With a seamless user experience, ShopMe offers a myriad of features including easy checkout, secure sign-in/out, personalized carts, and efficient delivery tracking. From browsing to purchase, ShopMe prioritizes user satisfaction, ensuring a hassle-free shopping journey for every customer. Experience the future of online shopping with ShopMe today.<br> Click to Navigate</p>
+                    </div>
+                    </a>
+                </div> -->
+                
+                <div class="image1-container col-md-3 col-sm-6">
+                    <a href="https://shivanimishra370.github.io/ShopMe/">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.5s">
+                         <!-- <i class="fa fa-html5"></i> -->
+                         <h4 class="color-white">Project 1</h4>
+                              <h3>ShopMe</h3>
+                              <p class="color-white">Introducing ShopMe: an innovative e-commerce hub where convenience meets functionality. With seamless browsing, secure checkout, and personalized features, ShopMe ensures a hassle-free shopping journey. Experience the future of online retail today. <br>Click to navigate.</p>
+                                   
+                    </div>
+               </a>
+               </div>
+
+               <div class="image2-container col-md-3 col-sm-6">
+
+                    <a href="https://shivanimishra370.github.io/Shoppeum_website/">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                         <!-- <i class="fa fa-table"></i> -->
+                         <h4 class="color-white">Project 2</h4>
+                              <h3>Shoppeum</h3>
+                              <p class="color-white">Shoppeum, a dynamic Amazon-inspired frontend clone designed to offer seamless browsing
+                                    and shopping experiences. Explore a familiar interface with a fresh twist, redefining online retail accessibility.
+                                  <br> Click to Navigate</p>
+                    </div>
+               </a>
+               </div>
+
+               <div class="image-container col-md-3 col-sm-6">
+                    <a href="https://shivanimishra370.github.io/Insta/">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.0s">
+                         <!-- <i class="fa fa-html5"></i> -->
+                         <h4 class="color-white">Project 3</h4>
+                              <h3>Instagram_clone</h3>
+                              <p class="color-white">I've created a specialized Instagram clone focused exclusively on image sharing. This platform offers users a streamlined experience dedicated solely to 
+                                   visual content, prioritizing seamless image-centric interactions for a more engaging social media experience.<br>Click To Navigate</p>
+                                   
+                    </div>
+               </a>
+               </div>
+               <div class="bg-yellow col-md-3 col-sm-6">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
+                         <i class="fa fa-desktop"></i>
+                              <h3>Technologies</h3>
+                              <p class="color-white">
+                                   "Embark on a technological journey powered by Java, Spring Boot, ReactJS, and a mastery of frontend essentials like HTML, CSS, and JavaScript. With expertise in database management through MySQL and a solid grasp of Object-Oriented Programming, 
+                                   unlock the potential to craft dynamic, scalable, and user-centric applications."</p>
+                    </div>
+               </div>
+
+               
+
+          </div>
+     </div>
+</section>
+
+
+
+<!-- Education Section -->
+
+<section id="education" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white education-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Education</h1>
+
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Bachelor in Technology <small> 2020 July - 2024 June</small></h3>
+                                   <p class="color-white">
+                                       
+                                        B. TECH,BABUBANARASI DASNATIONAL INSTITUTEOF TECHNOLOGY ANDMANAGEMENT,
+                                        LUCKNOW WITH 76% </p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Intermediate <small>2019 May - 2020 June</small></h3>
+                                   <p class="color-white">
+                                      
+                                        INTERMEDIATE, LITTLE FLOWER SR. SECONDARY SCHOOL,GORAKHPUR WITH 78%</p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Matriculation <small>2017 April - 2018 June</small></h3>
+                                   <p class="color-white">
+                                      
+                                        MATRICULATION, LITTLE FLOWER SR. SECONDARY SCHOOL,GORAKHPUR WITH 77%</p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image education-img"></div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-12">
+                    <div class="contact-form">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                              <h1 class="color-white">Say hello..</h1>
+                         </div>
+
+                         <div id="contact-form">
+                              <form >
+                                   <div class="wow fadeInUp" data-wow-delay="1s">
+                                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.2s">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                                   </div>
+                                   <div class="wow fadeInUp" data-wow-delay="1.4s">
+                                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
+                                   </div>
+                                   <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                                   </div>
+                              </form>
+                         </div>
+                         <div id="messageBox" style="display: none;">
+                              <p>Thank you for your message!</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image contact-img"></div>
+               </div>
+
+               <div class="bg-dark col-md-3 col-sm-6">
+                    <div class="contact-thumb">
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+                              <h3 class="color-white">Contact Me</h3>
+                              <p>Lucknow, Uttar Pradesh</p>
+                         </div>
+
+                         <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+                              <h3 class="color-white">Contact.</h3>
+                              <p><i class="fa fa-phone"></i> +91 91708120248</p>
+                              <p><i class="fa fa-envelope-o"></i> <a href="mailto:livelycolours510@gmail.com">livelycolours510@gmail.com</a></p>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                    
+                    </div>
+				<ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                         <li><a href="https://www.linkedin.com/in/shivani-mishra-15a385210/" class="fa fa-linkedin"></a></li>
+                         <li><a href="https://www.facebook.com/profile.php?id=100024465433599" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+     
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+<!-- <script>
+     
+     var from = document.getElementById('form')
+     form.addEventListener('submit', function(event){
+          event.preventDefault()
+          var fullname=document.getElementById("fullname").value
+console.log(fullname)
+
+var fullname=document.getElementById("email").value
+console.log(email)
+
+var fullname=document.getElementById("message").value
+console.log(message)
+
+
+
+     }) -->
+<!-- </script> -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
